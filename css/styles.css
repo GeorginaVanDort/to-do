@@ -1,0 +1,16 @@
+#show-task {
+  display: none;
+}
+
+.task-item {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.task-item:hover {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

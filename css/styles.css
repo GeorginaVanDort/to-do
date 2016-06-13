@@ -2,7 +2,7 @@
   display: none;
 }
 
-.task-item {
+.task-item, .completed-button {
   cursor: pointer;
   color: #0088cc;
 }

@@ -11,7 +11,7 @@ function ToDo (task, materials, time, due, collaborator) {
 $(document).ready(function() {
   $("form#new-task").submit(function(event) {
     event.preventDefault();
-		// debugger;
+
     var task = $("input#new-task").val();
     var materials = $("input#new-materials").val();
     var time = $("input#new-time").val();
@@ -20,7 +20,8 @@ $(document).ready(function() {
 
     var newToDo = new ToDo(task, materials, time, due, collaborator);
     var liId = task;
-    $("ul#task-list").append("<li><span class='task-item'>" + newToDo.task +
+
+    $("ul#task-list").append("<li><span class='task-item'>" + newToDo.task + " " + 
           "</span><span class='completed-button glyphicon glyphicon-ok'></span>"
          + "</li>");
 
